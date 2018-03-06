@@ -1,0 +1,30 @@
+<view class="test">
+  <view class="test__content">{{testContent}}</view>
+  <navigator class="test__link" url="/page/test">去测试页</navigator>
+  <view bindtap="record">record</view>
+</view>
+
+<test-comp name="A" bindhello="onHello" />
+<test-comp name="B" light="true">再嵌点别的内容</test-comp>
+
+<test-comp wx:for="{{testCompList}}"
+           wx:for-item="testComp"
+           wx:key=""
+           name="{{testComp.name}}"
+           light="{{testComp.light}}" />
+
+
+<view class="cnode">
+  <navigator hidden="{{!articles}}"
+             class="cnode__article"
+             wx:for="{{articles}}"
+             wx:for-item="article"
+             wx:key="{{article.id}}"
+             url="/page/article?id={{article.id}}"
+  >
+    {{article.title}}
+  </navigator>
+  <view hidden="{{articles}}" class="cnode__loading">文章加载中...</view>
+</view>
+
+<!--<web-view src="https://weshopdemo.umaman.com/test-location/jump.html" />-->

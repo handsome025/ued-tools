@@ -1,0 +1,13 @@
+.test-comp {
+  background: #eee;
+  height: 30px;
+}
+
+.test-comp__text {
+  color: #666;
+  padding: 20px;
+}
+
+.test-comp__text--light {
+  color: #f60;
+}

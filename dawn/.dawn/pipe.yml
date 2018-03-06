@@ -1,0 +1,20 @@
+# https://alibaba.github.io/dawn/docs/#!/zh/middleware/webpack
+
+init:
+  - name: pkginfo
+
+dev:
+  - name: clean
+  - name: webpack
+    watch: true
+    entry: ./src/page/*.js
+    template: ./src/page/*.html
+  - name: server
+  - name: browser-sync
+
+build:
+  - name: clean
+  - name: webpack
+    entry: ./src/page/*.js
+    template: ./src/page/*.html
+    output: dist

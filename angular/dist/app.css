@@ -1,0 +1,64 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 0.32rem;
+}
+li {
+  list-style: none;
+}
+html,
+body,
+.ued-page {
+  height: 100%;
+}
+.ued-page {
+  position: relative;
+  display: block;
+  line-height: 1;
+}
+.ued-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+     -moz-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+.ued-scroll {
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.ued-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ued-pop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 500;
+}
+
+page-index {
+  background: url(../static/test.jpg) no-repeat;
+}
+page-index p {
+  color: #fff;
+}
+
+/*# sourceMappingURL=app.css.map */

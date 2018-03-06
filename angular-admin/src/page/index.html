@@ -1,0 +1,49 @@
+<div class="wrapper">
+    <header class="main-header">
+        <a href="index.html" class="logo">
+            <span class="logo-mini">管</span>
+            <span class="logo-lg">后台管理系统</span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li data-toggle="tooltip" data-placement="bottom" title="退出登录">
+                        <a href="login.html">
+                            {{userInfo.name}} <i class="fa fa-fw fa-sign-out"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="{{menu.type}}" ng-repeat="menu in menuList track by $index">
+                    <span ng-if="menu.type == 'header'">{{menu.name}}</span>
+                    <a ng-if="menu.type != 'header'" href="{{menu.link}}">
+                        <i class="fa {{menu.icon || 'fa-th'}}"></i> <span>{{menu.name}}</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul ng-if="menu.type == 'treeview' && menu.child.length" class="treeview-menu">
+                        <li ng-repeat="child in menu.child track by $index">
+                            <a href="{{child.link}}"><i class="fa {{child.icon || 'fa-circle-o'}}"></i> {{child.name}}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <div class="content-wrapper">
+        <div class="content-iframe">
+            <iframe src="example.html"></iframe>
+        </div>
+    </div>
+</div>

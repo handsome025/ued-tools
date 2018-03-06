@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html data-version="<%= version %>" data-page="<%= page %>">
+    <head>
+        <meta charset="UTF-8">
+        <base href="<%= base %>">
+        <title></title>
+        <meta name="format-detection" content="telephone=no,address=no,email=no">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="dns-prefetch" href="//open.weixin.qq.com">
+        <link rel="dns-prefetch" href="//hm.baidu.com">
+        <script src="//catholicstatic.umaman.com/ued/ued-1.10.0.js"></script>
+        <script>ued.rem(640)</script>
+        <link rel="stylesheet" href="//catholicstatic.umaman.com/ued/weui-1.1.0.css">
+        <link rel="stylesheet" href="dist/app.css?<%= version %>">
+    </head>
+    <body>
+        <%- view %>
+        <script src="dist/vendor.js?<%= version %>"></script>
+        <script src="dist/app.js?<%= version %>"></script>
+
+        <% if (page == 'example') { %>
+        <script>
+            // 只有 example 页面才会有这段 script
+            console.log('example page !')
+        </script>
+        <% } %>
+    </body>
+</html>

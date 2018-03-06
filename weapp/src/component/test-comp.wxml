@@ -1,0 +1,7 @@
+<view class="test-comp">
+  <view bindtap="tapText" class="test-comp__text {{light ? 'test-comp__text--light' : ''}}">
+    {{name}}
+  </view>
+  <!-- slot 是可选的，会把标签中间的内容插进来 -->
+  <slot />
+</view>

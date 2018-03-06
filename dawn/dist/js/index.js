@@ -1,0 +1,2 @@
+webpackJsonp([0],[,,,function(n,e,o){n.exports=o(4)},function(n,e,o){o(5),o(6),document.querySelector(".app-welcome").innerHTML="Welcome to Dawn"},function(n,e){},function(n,e){}],[3]);
+//# sourceMappingURL=index.js.map

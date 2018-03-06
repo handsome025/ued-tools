@@ -1,0 +1,53 @@
+<section class="content-header">
+    <h1>示例 <small>组件使用示例</small></h1>
+    <ol class="breadcrumb">
+        <li>
+            <a href="a.html"><i class="fa fa-dashboard"></i> AAA</a>
+        </li>
+        <li>
+            <a href="b.html">BBB</a>
+        </li>
+        <li class="active">
+            <span>示例</span>
+        </li>
+    </ol>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box box-{{color || 'primary'}}">
+                <div class="box-header with-border">
+                    <h3 class="box-title">盒子</h3>
+                </div>
+                <div class="box-body">
+                    <p>test</p>
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-flat btn-primary" ng-click="loading = true">点击模拟加载</button>
+                        <button type="button" class="btn btn-flat btn-default" ng-click="color = 'danger'">点击切换颜色</button>
+                    </div>
+                </div>
+                <div class="overlay" ng-show="loading">
+                    <i class="fa fa-refresh fa-spin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs pull-right">
+                    <li><a href="#tab2" data-toggle="tab" aria-expanded="false">Area</a></li>
+                    <li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="true">Donut</a></li>
+                    <li class="pull-left header"><i class="fa fa-inbox"></i> Sales</li>
+                </ul>
+                <div class="tab-content">
+                    <div class="chart tab-pane" id="tab2">
+                        <p>Area</p>
+                    </div>
+                    <div class="chart tab-pane active" id="tab1">
+                        <p>Donut</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

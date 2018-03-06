@@ -1,0 +1,14 @@
+.test__link {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 20px;
+}
+
+.cnode__article {
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px dashed #ccc;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

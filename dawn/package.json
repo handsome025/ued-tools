@@ -1,0 +1,10 @@
+{
+  "name": "dawn",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "postinstall": "npm i -g dawn"
+  },
+  "license": "MIT",
+  "devDependencies": {}
+}
